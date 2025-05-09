@@ -33,6 +33,7 @@ Créer une plateforme MLOps fonctionnelle incluant :
 | Sprint 4 | Documentation, Loom vidéo, fiche projet pour portfolio |
 
 ## 📁 Structure prévue
+```bash
 domino_mlops_clone/
 ├── api/                  # Code Flask pour exposer le modèle
 ├── model/                # Entraînement et suivi du modèle
@@ -41,6 +42,7 @@ domino_mlops_clone/
 ├── notebooks/            # Explorations Jupyter
 ├── .gitlab-ci.yml        # Pipeline CI/CD
 └── README.md             # Documentation du projet
+```
 
 ## ✍️ Auteur
 

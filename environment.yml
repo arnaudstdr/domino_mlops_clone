@@ -1,0 +1,57 @@
+name: domino-mlops
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.18
+  # Packages de base pour le développement
+  - pip
+  - ipython
+  - jupyterlab
+  - nb_conda_kernels
+  - pytest
+  - black
+  - flake8
+  - isort
+  # Packages pour le Machine Learning
+  - scikit-learn
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - mlflow
+  # Packages pour l'API
+  - flask
+  - flask-restful
+  - gunicorn
+  # Packages pour PostgreSQL
+  - psycopg2
+  - sqlalchemy
+  # Packages pour Kubernetes
+  - pip:
+    # Client Kubernetes pour Python
+    - kubernetes
+    # Client MLflow
+    - mlflow
+    # Monitoring et metrics
+    - prometheus-client
+    # Logging avancé
+    - python-json-logger
+    # Tests de charge
+    - locust
+    # Client Docker pour Python
+    - docker
+    # Pour la gestion des variables d'environnement
+    - python-dotenv
+    # Pour la CLI et l'automatisation
+    - click
+    # Pour la sérialisation/désérialisation des modèles
+    - joblib
+    # Pour la validation des données
+    - pydantic
+    # Pour les tests d'API
+    - requests
+
+# Variables d'environnement
+variables:
+  PYTHONPATH: ${CONDA_PREFIX}
